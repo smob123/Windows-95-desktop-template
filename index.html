@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Windows 95</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+</head>
+
+<body>
+    <div id='main-container'>
+        <div class="col1">
+            <div class='folder'>
+                <img src='images/folder.png' onclick="openFolder('images')" />
+                <span>Images</span>
+            </div>
+            <div class='folder'>
+                <img src='images/folder.png' />
+                <span>Folder</span>
+            </div>
+            <div class='folder'>
+                <img src='images/folder.png' />
+                <span>Folder</span>
+            </div>
+            <div class='folder' onclick="openFolder('internet')">
+                <img src='images/internet.png' class='internet-img' />
+                <span>The Internet</span>
+            </div>
+
+            <div class='folders'>
+                <div id='folder-window'>
+                    <div class='window-bar' draggable="true">
+                        <div id='close-window' onclick="closeFolder(this)">
+                            <span>X</span>
+                        </div>
+                    </div>
+                    <div id='folder-content'>
+                        <div onclick="viewImage('images/images-folder-content/img1.png')">
+                            <img src='images/images-folder-content/img1.png' alt='image' />
+                            <span>Image 1</span>
+                        </div>
+
+                        <div onclick="viewImage('images/images-folder-content/img2.jpg')">
+                            <img src='images/images-folder-content/img2.jpg' alt='image' />
+                            <span>Image 2</span>
+                        </div>
+                    </div>
+                </div>
+                <div id='full-screen' onclick='hideImage()'>
+                    <img alt='preview' id='preview-img' />
+                </div>
+            </div>
+            <div id='error-box'>
+                <div class='error-box-bar'>
+                    <div id='close-window' onclick="closeFolder(this)">
+                        <span>X</span>
+                    </div>
+                </div>
+                <div id='error-content'>
+                    <div>
+                        <img src='images/attention.png' alt='attention' />
+                    </div>
+                    <div id='error-message'>
+                        <span>This app cannot be used right now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" id='start-menu'>
+            <div class="menu-item" onclick="closeTab()">
+                <div>
+                    <img src='images/shutdown.jpg' alt='shutdown' />
+                </div>
+                <div>
+                    <span>Shut Down</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id='start-menu-btn' onclick="displayMenu()">
+                <img src="images/logo.png" id='start-menu-btn' />
+                <span>Start</span>
+            </div>
+            <div class='time'>
+                <span id='time'>12:00PM</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <script src=' index.js'></script>
+</body>
+
+</html>
