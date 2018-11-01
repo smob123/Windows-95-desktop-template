@@ -8,7 +8,7 @@ body {
 
 .col1 {
     width: 5%;
-    height: 92vh;
+    height: 93.5vh;
     margin-left: 2%;
     margin-top: 1%;
     color: #fff;
@@ -20,14 +20,14 @@ body {
 }
 
 .col1 img {
-    width: 70%;
+    width: 150%;
 }
 
 #folder-window {
     position: absolute;
     top: 10%;
     left: 20%;
-    width: 50%;
+    width: 70%;
     height: 50%;
     background-color: #fff;
     display: none;
@@ -43,7 +43,8 @@ body {
     display: grid;
     place-items: center;
     position: relative;
-    left: 95%;
+    left: 94%;
+    right: 2%;
     width: 5%;
     height: 100%;
     cursor: default;
@@ -72,6 +73,7 @@ body {
     width: 20%;
     height: 20%;
     margin-top: 2%;
+    margin-left: 15%;
 }
 
 #full-screen {
@@ -85,7 +87,7 @@ body {
 }
 
 #full-screen img {
-    max-width: 50%;
+    max-width: 80%;
 }
 
 #error-box {
@@ -93,7 +95,7 @@ body {
     position: absolute;
     top: 10%;
     left: 20%;
-    width: 30%;
+    width: 60%;
     height: 20%;
     background-color: #ADADAD;
 }
@@ -103,6 +105,10 @@ body {
     height: 20%;
     background-color: gray;
     display: hidden;
+}
+
+#error-box #close-window {
+    left: 92%;
 }
 
 #error-content {
@@ -135,7 +141,7 @@ body {
     position: absolute;
     bottom: 6%;
     left: .5%;
-    width: 15%;
+    width: 30%;
     background-color: #ADADAD;
 }
 
@@ -154,7 +160,7 @@ body {
 }
 
 .menu-item img {
-    width: 60%;
+    width: 90%;
 }
 
 footer {
@@ -165,7 +171,7 @@ footer {
 
 #start-menu-btn {
     margin: auto auto auto .5%;
-    width: 6%;
+    width: 15%;
     height: 60%;
     border-style: solid;
     border-color: lightgray rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3) lightgray;
@@ -194,4 +200,62 @@ footer {
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.3) lightgray lightgray rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 600px) {
+    #folder-content-img {
+        width: 100%;
+    }
+    #close-window {
+        left: 95%;
+    }
+    #error-box #close-window {
+        left: 95%;
+    }
+    .error-box-bar {
+        height: 25%;
+    }
+    #start-menu-btn {
+        width: 10%;
+    }
+    .menu {
+        width: 20%;
+    }
+}
+
+@media (min-width: 700px) {
+    .col1 img {
+        width: 100%;
+    }
+    #folder-content div {
+        margin-left: 5%;
+    }
+    .menu {
+        width: 15%;
+    }
+}
+
+@media (min-width: 900px) {
+    .col1 {
+        height: 92vh;
+    }
+    .col1 img {
+        width: 70%;
+    }
+    #folder-window {
+        width: 50%;
+        height: 50%;
+    }
+    #folder-content div {
+        margin-left: 0;
+    }
+    #error-box {
+        width: 40%;
+    }
+    .menu {
+        width: 15%;
+    }
+    #start-menu-btn {
+        width: 6%;
+    }
 }
