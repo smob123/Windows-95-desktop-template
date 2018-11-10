@@ -139,7 +139,7 @@ body {
 .menu {
     display: none;
     position: absolute;
-    bottom: 6%;
+    bottom: 5.5%;
     left: .5%;
     width: 30%;
     background-color: #ADADAD;
@@ -253,7 +253,7 @@ footer {
         width: 40%;
     }
     .menu {
-        width: 15%;
+        width: 10%;
     }
     #start-menu-btn {
         width: 6%;
